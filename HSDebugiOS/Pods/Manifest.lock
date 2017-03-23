@@ -1,0 +1,16 @@
+PODS:
+  - HSDebug (1.0.0)
+
+DEPENDENCIES:
+  - HSDebug (from `..`)
+
+EXTERNAL SOURCES:
+  HSDebug:
+    :path: ".."
+
+SPEC CHECKSUMS:
+  HSDebug: 2204c1d0080d7bf1c4c19e9e39b120c295504ebf
+
+PODFILE CHECKSUM: 72164fc3562abe7fb6f956d623ea91d7945fd6f3
+
+COCOAPODS: 1.2.0
