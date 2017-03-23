@@ -1,10 +1,13 @@
 {
   "name": "HSDebug",
   "version": "1.0.0",
-  "summary": "HSDebug.",
-  "description": "HSDebug",
+  "summary": "HSDebug : A flexible, lightweight, scalable, customizable log debugging",
+  "description": "HSDebug : A flexible, lightweight, scalable, customizable log debugging",
   "homepage": "https://github.com/ccworld1000/HSDebug",
-  "license": "MIT",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE.txt"
+  },
   "authors": {
     "cc": "ccworld1000@gmail.com"
   },
@@ -18,5 +21,6 @@
   },
   "source_files": "HSDebug/*.{h,m}",
   "exclude_files": "Classes/Exclude",
+  "frameworks": "Foundation",
   "requires_arc": true
 }

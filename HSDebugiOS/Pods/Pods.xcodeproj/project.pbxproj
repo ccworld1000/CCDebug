@@ -8,16 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		156FAEA490F61C3380BE9CD126D0FB24 /* Pods-HSDebugiOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71677AC8E96A161CF7FCDE68593407EF /* Pods-HSDebugiOS-dummy.m */; };
+		1914ED32DB4362A47E2D3242B1D976D1 /* HSDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A07EFABC1AC884D38AC0D322FC17215 /* HSDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C8149011CCD7BC12E52B1E8FC64C907 /* HSDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = F02499273C943D153CDC52E86CDEEBE3 /* HSDebug.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		2593E589B5B50ED4BEBF69E0E5ACC9CF /* HSDebug-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2847EDF457AC06342E123C3795F84FB /* HSDebug-iOS-dummy.m */; };
-		28CA47AED5F5934301A30F0AE7D16229 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EEDD58EC35A4E9347CB06714F7040C /* Foundation.framework */; };
-		430FD9CD4228B2E35B8FD69D646C7A5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EEDD58EC35A4E9347CB06714F7040C /* Foundation.framework */; };
+		28CA47AED5F5934301A30F0AE7D16229 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C92AADD72ECC5FE3DD0D70E199FF3E6 /* Foundation.framework */; };
+		430FD9CD4228B2E35B8FD69D646C7A5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C92AADD72ECC5FE3DD0D70E199FF3E6 /* Foundation.framework */; };
 		5011E0F7CF16C4B1320CB6DC628492F9 /* HSDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A07EFABC1AC884D38AC0D322FC17215 /* HSDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		503AD47C28E078A8DAD640E00BE6DDC6 /* HSDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = F02499273C943D153CDC52E86CDEEBE3 /* HSDebug.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		84886C41700BD0E5DBCD7F056EF86C07 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDAA23DDA8E082FC77E38FA01601C8F /* Cocoa.framework */; };
-		9AF18044C57B27381C202E558FDB8298 /* HSDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A07EFABC1AC884D38AC0D322FC17215 /* HSDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9FE521C7F54C31EC6564557BA410604C /* HSDebug-OSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3627A2E25821BDDF67070138619B578 /* HSDebug-OSX-dummy.m */; };
-		BB6879CF3303942E387574495E92D308 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDAA23DDA8E082FC77E38FA01601C8F /* Cocoa.framework */; };
+		91CFA505ED78284A132440FFF44C0B98 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8006F2EA269E58F8DF71D5033D2D0468 /* Cocoa.framework */; };
+		B94B95BF1C6CFA07852941E43BA5807C /* HSDebug-OSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3627A2E25821BDDF67070138619B578 /* HSDebug-OSX-dummy.m */; };
+		BB6879CF3303942E387574495E92D308 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8006F2EA269E58F8DF71D5033D2D0468 /* Cocoa.framework */; };
 		C3BCF27B5213FFC2B88BDCC449AC0AF1 /* Pods-HSDebugOSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6DF75676381ADC11933A7893015787 /* Pods-HSDebugOSX-dummy.m */; };
+		E4D82DE83FDECE6BDF21DA3565882493 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 669D4B9F6D8CE390EBE080C9E8C2805D /* Foundation.framework */; };
 		F3A1AD76F32E2099047B01C7BED1B40E /* HSDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = F02499273C943D153CDC52E86CDEEBE3 /* HSDebug.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 /* End PBXBuildFile section */
 
@@ -33,7 +34,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F516C63827538DB4959527BF8D3EEAA1;
+			remoteGlobalIDString = 9A5E8D6BDA0128F8DBBACBE0E6EA3D63;
 			remoteInfo = "HSDebug-OSX";
 		};
 /* End PBXContainerItemProxy section */
@@ -44,23 +45,26 @@
 		1D04C603AF9B30215B28F662D2EC9053 /* Pods-HSDebugiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HSDebugiOS.release.xcconfig"; sourceTree = "<group>"; };
 		1F18D57FB4D68229014727657A64F0C5 /* HSDebug-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "HSDebug-iOS-prefix.pch"; path = "../HSDebug-iOS/HSDebug-iOS-prefix.pch"; sourceTree = "<group>"; };
 		22C3F63A0B0E2C1D6681C48BAD7CE80A /* HSDebug-OSX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSDebug-OSX-prefix.pch"; sourceTree = "<group>"; };
+		23D6CA5A6E42127544DAA348F19A76A2 /* BaiduMobStat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BaiduMobStat.h; path = BaiduMobStat/BaiduMobStat.h; sourceTree = "<group>"; };
 		2F4598480A08482B82BB490BDF291297 /* libPods-HSDebugOSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-HSDebugOSX.a"; path = "libPods-HSDebugOSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		343DF3A01865FEB698A9BB9634598CB4 /* Pods-HSDebugiOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HSDebugiOS-resources.sh"; sourceTree = "<group>"; };
 		47F71DA7EC039DD05ECF4C86A153E8AC /* Pods-HSDebugOSX-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HSDebugOSX-resources.sh"; sourceTree = "<group>"; };
+		4F1400848064A26BA75F8CD1276B14B3 /* libBaiduMobStat.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libBaiduMobStat.a; path = BaiduMobStat/libBaiduMobStat.a; sourceTree = "<group>"; };
 		4F4C8D54EE8DDB2C557663FFA03B75BB /* Pods-HSDebugOSX-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HSDebugOSX-acknowledgements.plist"; sourceTree = "<group>"; };
 		5406AD63E351268765D49E28DA55C61E /* Pods-HSDebugOSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HSDebugOSX.release.xcconfig"; sourceTree = "<group>"; };
 		549258FF4D8AFF3F7CE5ABFB109162FB /* Pods-HSDebugiOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HSDebugiOS-acknowledgements.plist"; sourceTree = "<group>"; };
-		65EEDD58EC35A4E9347CB06714F7040C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		669D4B9F6D8CE390EBE080C9E8C2805D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6CEC70DFBD962C0BF591B6C155070478 /* HSDebug-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "HSDebug-iOS.xcconfig"; path = "../HSDebug-iOS/HSDebug-iOS.xcconfig"; sourceTree = "<group>"; };
 		71677AC8E96A161CF7FCDE68593407EF /* Pods-HSDebugiOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HSDebugiOS-dummy.m"; sourceTree = "<group>"; };
 		72F97935802A59312884C8977616702B /* libPods-HSDebugiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-HSDebugiOS.a"; path = "libPods-HSDebugiOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C92AADD72ECC5FE3DD0D70E199FF3E6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8006F2EA269E58F8DF71D5033D2D0468 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A2847EDF457AC06342E123C3795F84FB /* HSDebug-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "HSDebug-iOS-dummy.m"; path = "../HSDebug-iOS/HSDebug-iOS-dummy.m"; sourceTree = "<group>"; };
 		AA8CD99B76907E3CFEB8E6807B771A06 /* HSDebug-OSX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "HSDebug-OSX.xcconfig"; sourceTree = "<group>"; };
 		B42C938533ECBB6F66B8F65E9203C139 /* Pods-HSDebugiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HSDebugiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		CA6DF75676381ADC11933A7893015787 /* Pods-HSDebugOSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HSDebugOSX-dummy.m"; sourceTree = "<group>"; };
 		CDCC74B5B2638379761DB58F49BA0EB4 /* libHSDebug-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libHSDebug-iOS.a"; path = "libHSDebug-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDDAA23DDA8E082FC77E38FA01601C8F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		D22D76544C0B1A13CE0527FF794D4652 /* Pods-HSDebugOSX-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HSDebugOSX-frameworks.sh"; sourceTree = "<group>"; };
 		D3627A2E25821BDDF67070138619B578 /* HSDebug-OSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HSDebug-OSX-dummy.m"; sourceTree = "<group>"; };
 		D4C60E35D376C1E93B7F0E8780DD64F2 /* Pods-HSDebugiOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HSDebugiOS-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -79,14 +83,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		677F836014188473160C5F1348FB1FB1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				84886C41700BD0E5DBCD7F056EF86C07 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BBCD0DDE1F70C30328F9B759A718F1ED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -100,6 +96,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB6879CF3303942E387574495E92D308 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6444A609AB055DEF1379D2F44F826A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91CFA505ED78284A132440FFF44C0B98 /* Cocoa.framework in Frameworks */,
+				E4D82DE83FDECE6BDF21DA3565882493 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,19 +126,10 @@
 			path = "Target Support Files/Pods-HSDebugOSX";
 			sourceTree = "<group>";
 		};
-		2EDFAB15A7E74F864EB353FCB5A57006 /* OS X */ = {
+		11654185C1CACE292B32AD668D95637B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CDDAA23DDA8E082FC77E38FA01601C8F /* Cocoa.framework */,
-			);
-			name = "OS X";
-			sourceTree = "<group>";
-		};
-		3AEF7D761E8EA8419BB4A7000AB770CB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				95A165433BB896B7C2CAF2425A40BF8D /* iOS */,
-				2EDFAB15A7E74F864EB353FCB5A57006 /* OS X */,
+				4F1400848064A26BA75F8CD1276B14B3 /* libBaiduMobStat.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,6 +158,16 @@
 			path = HSDebug;
 			sourceTree = "<group>";
 		};
+		6DCC665D9421C12DB37751BA4E845C59 /* BaiduMobStat */ = {
+			isa = PBXGroup;
+			children = (
+				23D6CA5A6E42127544DAA348F19A76A2 /* BaiduMobStat.h */,
+				11654185C1CACE292B32AD668D95637B /* Frameworks */,
+			);
+			name = BaiduMobStat;
+			path = BaiduMobStat;
+			sourceTree = "<group>";
+		};
 		6F48FC3B2402DF8AB5BB90147FB8FEAE /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,12 +187,21 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
+		77186C9D0B4EDA3DCDEE4EB7A98A7CA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DCC665D9421C12DB37751BA4E845C59 /* BaiduMobStat */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				707E8BF0BEEA9F6CD1EBEA3B54FED376 /* Development Pods */,
-				3AEF7D761E8EA8419BB4A7000AB770CB /* Frameworks */,
+				B3C2D6331B16C7BB39A27BBF5EF96D41 /* Frameworks */,
+				77186C9D0B4EDA3DCDEE4EB7A98A7CA6 /* Pods */,
 				6F48FC3B2402DF8AB5BB90147FB8FEAE /* Products */,
 				80B4929029BFAE863D16B88CA3F2F338 /* Targets Support Files */,
 			);
@@ -201,10 +216,10 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		95A165433BB896B7C2CAF2425A40BF8D /* iOS */ = {
+		92D84CD7DD809078EE828ABF0BEED6B9 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				65EEDD58EC35A4E9347CB06714F7040C /* Foundation.framework */,
+				7C92AADD72ECC5FE3DD0D70E199FF3E6 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -217,6 +232,15 @@
 			);
 			name = HSDebug;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		B3C2D6331B16C7BB39A27BBF5EF96D41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92D84CD7DD809078EE828ABF0BEED6B9 /* iOS */,
+				FDA50F0C048BA7E6D9D1EFD6AA8A9D5F /* OS X */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F473486B18B43700C085C0C13BDFC2BB /* Pods-HSDebugiOS */ = {
@@ -234,22 +258,31 @@
 			path = "Target Support Files/Pods-HSDebugiOS";
 			sourceTree = "<group>";
 		};
+		FDA50F0C048BA7E6D9D1EFD6AA8A9D5F /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				8006F2EA269E58F8DF71D5033D2D0468 /* Cocoa.framework */,
+				669D4B9F6D8CE390EBE080C9E8C2805D /* Foundation.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		3C94026F7E5D6ED13B4BEAAFD537AB15 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1914ED32DB4362A47E2D3242B1D976D1 /* HSDebug.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		71C12DE0BE69E84F88092753737C9A59 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5011E0F7CF16C4B1320CB6DC628492F9 /* HSDebug.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		758DE935AC3EDD42C48A386D6CE97E62 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9AF18044C57B27381C202E558FDB8298 /* HSDebug.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +323,23 @@
 			productReference = 2F4598480A08482B82BB490BDF291297 /* libPods-HSDebugOSX.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		9A5E8D6BDA0128F8DBBACBE0E6EA3D63 /* HSDebug-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27EFF404004966E9C22D07D8BCEF7760 /* Build configuration list for PBXNativeTarget "HSDebug-OSX" */;
+			buildPhases = (
+				88AEB750DD211A9A8C9ECF4BBB5E21D4 /* Sources */,
+				E6444A609AB055DEF1379D2F44F826A6 /* Frameworks */,
+				3C94026F7E5D6ED13B4BEAAFD537AB15 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HSDebug-OSX";
+			productName = "HSDebug-OSX";
+			productReference = 0AF8DD06924EE79C75DB7CB6A3BE4CD5 /* libHSDebug-OSX.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		B91A8FAFDF3DF492C8839049359C40D4 /* HSDebug-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E4260687E31905D25A9F341B0AD3D9E /* Build configuration list for PBXNativeTarget "HSDebug-iOS" */;
@@ -305,23 +355,6 @@
 			name = "HSDebug-iOS";
 			productName = "HSDebug-iOS";
 			productReference = CDCC74B5B2638379761DB58F49BA0EB4 /* libHSDebug-iOS.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		F516C63827538DB4959527BF8D3EEAA1 /* HSDebug-OSX */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D4190FFC2D984FE6A59DF2DC4371A695 /* Build configuration list for PBXNativeTarget "HSDebug-OSX" */;
-			buildPhases = (
-				3423615B52E170AA39229A182A6098A5 /* Sources */,
-				677F836014188473160C5F1348FB1FB1 /* Frameworks */,
-				758DE935AC3EDD42C48A386D6CE97E62 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "HSDebug-OSX";
-			productName = "HSDebug-OSX";
-			productReference = 0AF8DD06924EE79C75DB7CB6A3BE4CD5 /* libHSDebug-OSX.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -346,7 +379,7 @@
 			projectRoot = "";
 			targets = (
 				B91A8FAFDF3DF492C8839049359C40D4 /* HSDebug-iOS */,
-				F516C63827538DB4959527BF8D3EEAA1 /* HSDebug-OSX */,
+				9A5E8D6BDA0128F8DBBACBE0E6EA3D63 /* HSDebug-OSX */,
 				2D67C5B4C1D35FE72ACEE8C0AE4C2A2A /* Pods-HSDebugiOS */,
 				89F7F5D08E7975E8A40B893DD6D8DC79 /* Pods-HSDebugOSX */,
 			);
@@ -354,20 +387,20 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3423615B52E170AA39229A182A6098A5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9FE521C7F54C31EC6564557BA410604C /* HSDebug-OSX-dummy.m in Sources */,
-				503AD47C28E078A8DAD640E00BE6DDC6 /* HSDebug.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		521F3E08A28996EA65F3A50241750E26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				156FAEA490F61C3380BE9CD126D0FB24 /* Pods-HSDebugiOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88AEB750DD211A9A8C9ECF4BBB5E21D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B94B95BF1C6CFA07852941E43BA5807C /* HSDebug-OSX-dummy.m in Sources */,
+				1C8149011CCD7BC12E52B1E8FC64C907 /* HSDebug.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,36 +433,12 @@
 		E45033B1C76E055BAAE1AE702C54887E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "HSDebug-OSX";
-			target = F516C63827538DB4959527BF8D3EEAA1 /* HSDebug-OSX */;
+			target = 9A5E8D6BDA0128F8DBBACBE0E6EA3D63 /* HSDebug-OSX */;
 			targetProxy = E6D21F099ADDB2B95744F058A1B7B207 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		042BEDF9460940B7AD26E7EB06A1D3D3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA8CD99B76907E3CFEB8E6807B771A06 /* HSDebug-OSX.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HSDebug-OSX/HSDebug-OSX-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
 		124FA59E8D6D9E081044E45F4E5493C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EFED9B66AFBC3F2D121DE1ED1CCA03F1 /* Pods-HSDebugOSX.debug.xcconfig */;
@@ -454,6 +463,54 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
+		};
+		15BE5811CFDEE4266FD138E3A4887F2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA8CD99B76907E3CFEB8E6807B771A06 /* HSDebug-OSX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HSDebug-OSX/HSDebug-OSX-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		188E9BCC9A76FE0D62E34836B2C42A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA8CD99B76907E3CFEB8E6807B771A06 /* HSDebug-OSX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HSDebug-OSX/HSDebug-OSX-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
 		};
 		710BC2E6F9957338734059A13FF43C5A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -500,30 +557,6 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
-		};
-		B27C49993E6F64F30948E20C6733D439 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA8CD99B76907E3CFEB8E6807B771A06 /* HSDebug-OSX.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HSDebug-OSX/HSDebug-OSX-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-			};
-			name = Release;
 		};
 		D0270740F4E8490F1EA5CA21933183EB /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -694,6 +727,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		27EFF404004966E9C22D07D8BCEF7760 /* Build configuration list for PBXNativeTarget "HSDebug-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15BE5811CFDEE4266FD138E3A4887F2A /* Debug */,
+				188E9BCC9A76FE0D62E34836B2C42A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -717,15 +759,6 @@
 			buildConfigurations = (
 				AF59E07240A867ED776BACA699D864F1 /* Debug */,
 				D0270740F4E8490F1EA5CA21933183EB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D4190FFC2D984FE6A59DF2DC4371A695 /* Build configuration list for PBXNativeTarget "HSDebug-OSX" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				042BEDF9460940B7AD26E7EB06A1D3D3 /* Debug */,
-				B27C49993E6F64F30948E20C6733D439 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
