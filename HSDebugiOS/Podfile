@@ -2,11 +2,11 @@
 # platform :ios, '9.0'
 
 target 'HSDebugiOS' do
-    pod 'BaiduMobStat', '~> 4.4.0'
-    pod 'HSDebug', path: ".."
+    pod 'CCStat'
+    pod 'HSDebug'
 
 end
 
 target 'HSDebugOSX' do
-    pod 'HSDebug', path: ".."
+    pod 'HSDebug'
 end

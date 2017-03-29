@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "HSDebugTest.h"
-#import <BaiduMobStat.h>
+#import <CCStat.h>
 
 @interface AppDelegate ()
 
@@ -17,17 +17,10 @@
 @implementation AppDelegate
 
 
-- (void) loadingMobStat {
-    BaiduMobStat* statTracker = [BaiduMobStat defaultStat];
-    statTracker.shortAppVersion  = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
-    statTracker.enableDebugOn = NO;
-
-    [statTracker startWithAppId:@"a01ea9021f"];
-}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [self loadingMobStat];
+    [CCStat loadingMobStat:CCStatTypeHSDebug showDetail:NO];
     
     [HSDebugTest logTest];
     
