@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HSDebug"
-  s.version      = "1.0.1"
+  s.version      = "1.1.0"
   s.summary      = "HSDebug : A flexible, lightweight, scalable, customizable log debugging"
 
   # This description is used to generate tags and improve search results.
