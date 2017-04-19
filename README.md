@@ -19,6 +19,8 @@ HSDebug : A flexible, lightweight, scalable, customizable log debugging [supot i
 
 ## Support Xcode 4, 5, 6, 7 & 8
 
+[https://github.com/robbiehanson/XcodeColors](https://github.com/robbiehanson/XcodeColors)
+
 ##bug 
 Email ： <a href="mailto:ccworld1000@gmail.com">ccworld1000@gmail.com</a>
 

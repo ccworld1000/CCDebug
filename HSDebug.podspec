@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HSDebug"
-  s.version      = "1.1.0"
+  s.version      = "1.1.1"
   s.summary      = "HSDebug : A flexible, lightweight, scalable, customizable log debugging"
 
   # This description is used to generate tags and improve search results.
@@ -39,7 +39,7 @@ HSDebug : A flexible, lightweight, scalable, customizable log debugging
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = { :type => 'MIT', :file => 'LICENSE.txt' }
+  s.license      = { :type => 'MIT', :file => 'HSDebug.LICENSE.txt' }
 
 
 
@@ -107,7 +107,7 @@ HSDebug : A flexible, lightweight, scalable, customizable log debugging
   #  non-essential files like tests, examples and documentation.
   #
 
-  # s.resource  = "icon.png"
+  s.resource  = "HSDebug.LICENSE.txt"
   # s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"

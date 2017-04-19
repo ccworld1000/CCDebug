@@ -17,7 +17,7 @@
 #define HSDebugEnablePrefix 0
 
 //Color control switch off = 0 |  on = 1
-#define HSDebugColorRGBEnable   1
+//#define HSDebugColorRGBEnable   1
 
 //Configurable
 #define HSDebugWarningColorRGB  @"255,69,0"     //orange
@@ -75,14 +75,53 @@ void HSDebugProtocolURLPrint (NSString *message) {
 
 
 static BOOL HSDebugALLLogSwitch = NO;
+static BOOL HSDebugColorRGBEnable = NO; //Color control switch off = 0 |  on = 1
+
+static NSString *HSDebugWarningCustomColors     = nil;
+static NSString *HSDebugErrorCustomColors       = nil;
+static NSString *HSDebugNetHintCustomColors     = nil;
+static NSString *HSDebugNormalCustomColors      = nil;
 
 @implementation HSDebug
-    
+
++ (NSString *) colorWith : (NSUInteger) red green : (NSUInteger) green blue : (NSUInteger) blue {
+    return [NSString stringWithFormat:@"%d,%d,%d", red, green, blue];
+}
+
 + (void) debugLogSwitch : (BOOL) showLog {
     if (HSDebugALLLogSwitch != showLog) {
         HSDebugALLLogSwitch = showLog;
     }
 }
+
++ (void) colorRGBEnable : (BOOL) showColor {
+    HSDebugColorRGBEnable = showColor;
+}
+
++ (void) warningCustomColors : (NSUInteger) red green : (NSUInteger) green blue : (NSUInteger) blue {
+    if (HSDebugALLLogSwitch) {
+        HSDebugWarningCustomColors = [self colorWith:red green:green blue:blue];
+    }
+}
+
++ (void) errorCustomColors : (NSUInteger) red green : (NSUInteger) green blue : (NSUInteger) blue {
+    if (HSDebugALLLogSwitch) {
+        HSDebugErrorCustomColors = [self colorWith:red green:green blue:blue];
+    }
+}
+
++ (void) netHintCustomColors : (NSUInteger) red green : (NSUInteger) green blue : (NSUInteger) blue {
+    if (HSDebugALLLogSwitch) {
+        HSDebugNetHintCustomColors = [self colorWith:red green:green blue:blue];
+    }
+}
+
++ (void) normalCustomColors : (NSUInteger) red green : (NSUInteger) green blue : (NSUInteger) blue {
+    if (HSDebugALLLogSwitch) {
+        HSDebugNormalCustomColors = [self colorWith:red green:green blue:blue];
+    }
+}
+
     
 + (void) debugLog : (NSString *) prefix message : (NSString *) message {
     if (!prefix || !message) {
@@ -102,13 +141,13 @@ static BOOL HSDebugALLLogSwitch = NO;
         NSString *color = nil;
         if (HSDebugColorRGBEnable && prefix) {
             if ([prefix isEqualToString: HSDebugNormal]) {
-                color = HSDebugNormalColorRGB;
+                color = HSDebugNormalCustomColors ? HSDebugNormalCustomColors : HSDebugNormalColorRGB;
             } else if ([prefix isEqualToString: HSDebugWarning]) {
-                color = HSDebugWarningColorRGB;
+                color = HSDebugWarningCustomColors ? HSDebugWarningCustomColors :HSDebugWarningColorRGB;
             }  else if ([prefix isEqualToString: HSDebugError]) {
-                color = HSDebugErrorColorRGB;
+                color = HSDebugErrorCustomColors ? HSDebugErrorCustomColors : HSDebugErrorColorRGB;
             }  else if ([prefix hasPrefix:@"networking"]) {
-                color = HSDebugNetHintColorRGB;
+                color = HSDebugNormalCustomColors ? HSDebugNormalCustomColors :HSDebugNetHintColorRGB;
             }
         }
         

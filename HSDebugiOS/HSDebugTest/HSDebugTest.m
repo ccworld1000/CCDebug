@@ -13,6 +13,9 @@
 
 + (void) logTest {
     [HSDebug debugLogSwitch: YES];
+    [HSDebug colorRGBEnable: YES];
+    
+    [HSDebug warningCustomColors:60 green:120 blue:60];
     
     HSDebugWarningPrint(@"cc warning");
     HSDebugErrorPrint(@"cc error");

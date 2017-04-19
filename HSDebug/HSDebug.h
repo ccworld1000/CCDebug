@@ -56,12 +56,65 @@ FOUNDATION_EXPORT void HSDebugProtocolURLPrint (NSString *message);
 
 @interface HSDebug : NSObject
 
+/*=============================================================================================================*/
+
 /**
  *  debugLogSwitch | control all log switch, default NO, if you want debug, set YES
  *
  *  @param showLog showLog description | YES show , NO do noting.
  */
 + (void) debugLogSwitch : (BOOL) showLog;
+
+/**
+ *  colorRGBEnable | [XcodeColors installation] https://github.com/robbiehanson/XcodeColors
+ *  screenshot https://github.com/ccworld1000/HSDebug
+ *  @param showColor showColor description
+ */
++ (void) colorRGBEnable : (BOOL) showColor;
+
+/*
+ * [*]CustomColors only [debugLogSwitch | showLog = YES && colorRGBEnable | showColor = YES ]take effect
+ * red, green, blue value = [0 - 255]
+ *
+ */
+
+/**
+ *  warningCustomColors
+ *
+ *  @param red   red description
+ *  @param green green description
+ *  @param blue  blue description
+ */
++ (void) warningCustomColors : (NSUInteger) red green : (NSUInteger) green blue : (NSUInteger) blue;
+
+/**
+ *  errorCustomColors
+ *
+ *  @param red   red description
+ *  @param green green description
+ *  @param blue  blue description
+ */
++ (void) errorCustomColors : (NSUInteger) red green : (NSUInteger) green blue : (NSUInteger) blue;
+
+/**
+ *  netHintCustomColors
+ *
+ *  @param red   red description
+ *  @param green green description
+ *  @param blue  blue description
+ */
++ (void) netHintCustomColors : (NSUInteger) red green : (NSUInteger) green blue : (NSUInteger) blue;
+
+/**
+ *  normalCustomColors
+ *
+ *  @param red   red description
+ *  @param green green description
+ *  @param blue  blue description
+ */
++ (void) normalCustomColors : (NSUInteger) red green : (NSUInteger) green blue : (NSUInteger) blue;
+
+/*=============================================================================================================*/
     
 /**
  *  debugLog [OC style]
