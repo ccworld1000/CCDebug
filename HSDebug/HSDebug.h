@@ -41,6 +41,13 @@ FOUNDATION_EXPORT void HSDebugErrorPrint (NSString *message);
 FOUNDATION_EXPORT void HSDebugWarningPrint (NSString *message);
 
 /**
+ *  HSDebugTimerPrint | [C style] | Timer prompt
+ *
+ *  @param message message description
+ */
+FOUNDATION_EXPORT void HSDebugTimerPrint (NSString *message);
+
+/**
  *  HSDebugWebURLPrint | [C style] | WebURL prompt
  *
  *  @param message message description
@@ -71,6 +78,13 @@ FOUNDATION_EXPORT void HSDebugProtocolURLPrint (NSString *message);
  *  @param showColor showColor description
  */
 + (void) colorRGBEnable : (BOOL) showColor;
+
+/**
+ *  enableNSLogPrefix | Whether to open the NSLog prefix  off = 0 |  on = 1 | or NO | YES
+ *
+ *  @param on on description
+ */
++ (void) enableNSLogPrefix : (BOOL) on;
 
 /*
  * [*]CustomColors only [debugLogSwitch | showLog = YES && colorRGBEnable | showColor = YES ]take effect
@@ -113,6 +127,15 @@ FOUNDATION_EXPORT void HSDebugProtocolURLPrint (NSString *message);
  *  @param blue  blue description
  */
 + (void) normalCustomColors : (NSUInteger) red green : (NSUInteger) green blue : (NSUInteger) blue;
+
+/**
+ *  timerCustomColors
+ *
+ *  @param red   red description
+ *  @param green green description
+ *  @param blue  blue description
+ */
++ (void) timerCustomColors : (NSUInteger) red green : (NSUInteger) green blue : (NSUInteger) blue;
 
 /*=============================================================================================================*/
     

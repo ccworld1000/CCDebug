@@ -4,7 +4,6 @@
 target 'HSDebugiOS' do
     pod 'CCStat'
     pod 'HSDebug'
-
 end
 
 target 'HSDebugOSX' do

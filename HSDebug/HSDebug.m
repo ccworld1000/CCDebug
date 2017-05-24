@@ -13,17 +13,12 @@
 #ifndef HSDebug_h
 #define HSDebug_h
 
-//Whether to open the log prefix  off = 0 |  on = 1
-#define HSDebugEnablePrefix 0
-
-//Color control switch off = 0 |  on = 1
-//#define HSDebugColorRGBEnable   1
-
 //Configurable
 #define HSDebugWarningColorRGB  @"255,69,0"     //orange
 #define HSDebugErrorColorRGB    @"255,0,0"      //red
 #define HSDebugNetHintColorRGB  @"255,0,255"    //magenta
 #define HSDebugNormalColorRGB   @"0,0,255"      //blue
+#define HSDebugTimerColorRGB    @"125,38,205"   //Purple3
 
 //HSDebug Log Prompt identification | Configurable
 
@@ -31,6 +26,7 @@
 #define HSDebugError    @"HSDebug Error"
 #define HSDebugNormal   @"HSDebug normal"
 #define HSDebugWarning  @"HSDebug warning"
+#define HSDebugTimer    @"HSDebug Timer"
 
 #define HSDebugWebURL   @"HSDebug Web URL"
 
@@ -65,6 +61,10 @@ void HSDebugWarningPrint (NSString *message) {
     [HSDebug debugLog: HSDebugWarning message: message];
 }
 
+void HSDebugTimerPrint (NSString *message) {
+    [HSDebug debugLog: HSDebugTimer message: message];
+}
+
 void HSDebugWebURLPrint (NSString *message) {
     [HSDebug debugLog: HSDebugWebURL message: message];
 }
@@ -75,17 +75,20 @@ void HSDebugProtocolURLPrint (NSString *message) {
 
 
 static BOOL HSDebugALLLogSwitch = NO;
-static BOOL HSDebugColorRGBEnable = NO; //Color control switch off = 0 |  on = 1
+static BOOL HSDebugColorRGBEnable = NO;         //Color control switch off = 0 |  on = 1 | or NO | YES
+static BOOL HSDebugEnableNSLogPrefix = NO;      //Whether to open the NSLog prefix  off = 0 |  on = 1 | or NO | YES
+
 
 static NSString *HSDebugWarningCustomColors     = nil;
 static NSString *HSDebugErrorCustomColors       = nil;
 static NSString *HSDebugNetHintCustomColors     = nil;
 static NSString *HSDebugNormalCustomColors      = nil;
+static NSString *HSDebugTimerCustomColors       = nil;
 
 @implementation HSDebug
 
 + (NSString *) colorWith : (NSUInteger) red green : (NSUInteger) green blue : (NSUInteger) blue {
-    return [NSString stringWithFormat:@"%d,%d,%d", red, green, blue];
+    return [NSString stringWithFormat:@"%lu,%lu,%lu", (unsigned long)red, (unsigned long)green, (unsigned long)blue];
 }
 
 + (void) debugLogSwitch : (BOOL) showLog {
@@ -96,6 +99,10 @@ static NSString *HSDebugNormalCustomColors      = nil;
 
 + (void) colorRGBEnable : (BOOL) showColor {
     HSDebugColorRGBEnable = showColor;
+}
+
++ (void) enableNSLogPrefix : (BOOL) on {
+    HSDebugEnableNSLogPrefix = on;
 }
 
 + (void) warningCustomColors : (NSUInteger) red green : (NSUInteger) green blue : (NSUInteger) blue {
@@ -122,6 +129,11 @@ static NSString *HSDebugNormalCustomColors      = nil;
     }
 }
 
++ (void) timerCustomColors : (NSUInteger) red green : (NSUInteger) green blue : (NSUInteger) blue {
+    if (HSDebugALLLogSwitch) {
+        HSDebugTimerCustomColors = [self colorWith:red green:green blue:blue];
+    }
+}
     
 + (void) debugLog : (NSString *) prefix message : (NSString *) message {
     if (!prefix || !message) {
@@ -148,14 +160,16 @@ static NSString *HSDebugNormalCustomColors      = nil;
                 color = HSDebugErrorCustomColors ? HSDebugErrorCustomColors : HSDebugErrorColorRGB;
             }  else if ([prefix hasPrefix:@"networking"]) {
                 color = HSDebugNormalCustomColors ? HSDebugNormalCustomColors :HSDebugNetHintColorRGB;
+            } else if ([prefix isEqualToString:HSDebugTimer]) {
+                color = HSDebugErrorCustomColors ? HSDebugTimerCustomColors : HSDebugTimerColorRGB;
             }
         }
         
         if (color && message) {
-            m = [NSString stringWithFormat: @"%@%@;[%@]%@", HSDebugColorsEscape, color, HSDebugHint, message];
+            m = [NSString stringWithFormat: @"%@%@;%@", HSDebugColorsEscape, color, m];
         }
 
-        if (HSDebugEnablePrefix) {
+        if (HSDebugEnableNSLogPrefix) {
             NSLog(@"%@", m);
         } else {
             const char *ms = [m UTF8String];

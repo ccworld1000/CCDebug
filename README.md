@@ -24,6 +24,35 @@ HSDebug : A flexible, lightweight, scalable, customizable log debugging [supot i
 ##bug 
 Email ： <a href="mailto:ccworld1000@gmail.com">ccworld1000@gmail.com</a>
 
+## Podfile
+
+```ruby
+pod 'HSDebug'
+```
+## Demo
+```Objective-C
++ (void) logTest {
+    [HSDebug debugLogSwitch: YES];
+    
+    [HSDebug enableNSLogPrefix: NO];
+    
+    /**
+     *  colorRGBEnable | [XcodeColors installation] https://github.com/robbiehanson/XcodeColors
+     *  screenshot https://github.com/ccworld1000/HSDebug
+     *  @param showColor showColor description
+     */
+    [HSDebug colorRGBEnable: YES];
+    
+    [HSDebug warningCustomColors:60 green:120 blue:60];
+    
+    HSDebugWarningPrint(@"cc warning");
+    HSDebugErrorPrint(@"cc error");
+    HSDebugPrint(@"cc log");
+    
+    HSDebugTimerPrint(@"NStimer test");
+}
+```
+
 ## Screenshot
 
 ### OSX
@@ -32,14 +61,16 @@ Email ： <a href="mailto:ccworld1000@gmail.com">ccworld1000@gmail.com</a>
 ### iOS
 ![HSDebug iOS Screenshot](https://github.com/ccworld1000/HSDebug/blob/master/Documentation/iOSRunning.png?raw=true)
 
+### OSX Xcode_8.3.2
+![HSDebug Mac Xcode_8.3.2 Screenshot](https://github.com/ccworld1000/HSDebug/blob/master/Documentation/OSXRunning_Xcode_8.3.2.png?raw=true)
+
+### iOS Xcode_8.3.2
+![HSDebug iOS Xcode_8.3.2 Screenshot](https://github.com/ccworld1000/HSDebug/blob/master/Documentation/iOSRunning_Xcode_8.3.2.png?raw=true)
+
+
 ## HSDebug
 HSDebug simple support machosx and iOS, can simple replace NSLog.
 
-## Podfile
-
-```ruby
-pod 'HSDebug'
-```
 
 # MIT License
 ***
