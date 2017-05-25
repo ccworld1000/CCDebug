@@ -9,6 +9,15 @@
 
 #import <Foundation/Foundation.h>
 
+//net 1
+FOUNDATION_EXPORT NSString const *HSDebugNetHintGetV1;
+FOUNDATION_EXPORT NSString const *HSDebugNetHintPostV1;
+FOUNDATION_EXPORT NSString const *HSDebugNetHintResultsV1;
+
+//net 2
+FOUNDATION_EXPORT NSString const *HSDebugNetHintV2;
+FOUNDATION_EXPORT NSString const *HSDebugNetHintUploadtV2;
+
 /**
  *  HSDebugLog [C style] | Simplified use
  *

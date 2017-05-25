@@ -33,13 +33,13 @@
 #define HSDebugProtocolURL   @"HSDebug Protocol URL"
 
 //net 1
-#define HSDebugNetHintGetV1         @"networking v1 get log"
-#define HSDebugNetHintPostV1        @"networking v1 post log"
-#define HSDebugNetHintResultsV1     @"networking v1 results log"
+NSString const *HSDebugNetHintGetV1        =  @"networking v1 get log";
+NSString const *HSDebugNetHintPostV1       =  @"networking v1 post log";
+NSString const *HSDebugNetHintResultsV1    =  @"networking v1 results log";
 
 //net 2
-#define HSDebugNetHintV2            @"networking v2 log"
-#define HSDebugNetHintUploadtV2     @"networking v2 upload log"
+NSString const *HSDebugNetHintV2           =  @"networking v2 log";
+NSString const *HSDebugNetHintUploadtV2    =  @"networking v2 upload log";
 
 #endif /* HSDebug_h */
 
