@@ -1,10 +1,10 @@
-HSDebug.podspec
+CCDebug.podspec
 *.podspec
 Pods
 Podfile.lock
 .DS_Store  
-HSDebugiOS/Podfile.lock
-HSDebugiOS/Pods
+CCDebugiOS/Podfile.lock
+CCDebugiOS/Pods
 Pods/
 build/  
 *.pbxuser  

@@ -1,75 +1,71 @@
-# HSDebug for iOS && OSX
-HSDebug : A flexible, lightweight, scalable, customizable log debugging [supot iOS && OSX]
+# CCDebug for iOS && OSX
+CCDebug : A flexible, lightweight, scalable, customizable log debugging [supot iOS && OSX]
 
 =======================
 
-[![Apps Using](https://img.shields.io/cocoapods/at/HSDebug.svg?label=Apps%20Using%20HSDebug&colorB=28B9FE)](http://cocoapods.org/pods/HSDebug) [![Downloads](https://img.shields.io/cocoapods/dt/HSDebug.svg?label=Total%20Downloads&colorB=28B9FE)](http://cocoapods.org/pods/HSDebug)
-
-[![Platform](https://img.shields.io/badge/platforms-iOS%20%7C%20OSX-orange.svg)](https://github.com/ccworld1000/HSDebug.git)
-[![Languages](https://img.shields.io/badge/languages-ObjC-orange.svg)](https://github.com/ccworld1000/HSDebug)
-
-[![Version](https://img.shields.io/cocoapods/v/HSDebug.svg)](https://github.com/ccworld1000/HSDebug.git)
-[![License](https://img.shields.io/cocoapods/l/HSDebug.svg)](https://github.com/ccworld1000/HSDebug/blob/master/LICENSE)
-
-[![Build Status](https://travis-ci.org/ccworld1000/HSDebug.svg?branch=master)](https://travis-ci.org/ccworld1000/HSDebug)
-
-[https://github.com/ccworld1000/HSDebug.git](https://github.com/ccworld1000/HSDebug.git)
+[https://github.com/ccworld1000/CCDebug.git](https://github.com/ccworld1000/CCDebug.git)
 
 ## First : install XcodeColors
 
-## Support Xcode 4, 5, 6, 7 & 8
-
 [https://github.com/robbiehanson/XcodeColors](https://github.com/robbiehanson/XcodeColors)
 
-##bug 
-Email ： <a href="mailto:ccworld1000@gmail.com">ccworld1000@gmail.com</a>
+#### Support Xcode 4, 5, 6, 7, 8 & 9
+
+
+## bug or suggest
+
+QQ Email ：<a href="mailto:2291108617@qq.com">2291108617@qq.com</a>
+
+G Email ： <a href="mailto:ccworld1000@gmail.com">ccworld1000@gmail.com</a>
+
+**[Suggestion to send at the same time]**
 
 ## Podfile
 
 ```ruby
-pod 'HSDebug'
+pod 'CCDebug'
 ```
 ## Demo
 ```Objective-C
 + (void) logTest {
-    [HSDebug debugLogSwitch: YES];
+    [CCDebug debugLogSwitch: YES];
     
-    [HSDebug enableNSLogPrefix: NO];
+    [CCDebug enableNSLogPrefix: NO];
     
     /**
      *  colorRGBEnable | [XcodeColors installation] https://github.com/robbiehanson/XcodeColors
-     *  screenshot https://github.com/ccworld1000/HSDebug
+     *  screenshot https://github.com/ccworld1000/CCDebug
      *  @param showColor showColor description
      */
-    [HSDebug colorRGBEnable: YES];
+    [CCDebug colorRGBEnable: YES];
     
-    [HSDebug warningCustomColors:60 green:120 blue:60];
+    [CCDebug warningCustomColors:60 green:120 blue:60];
     
-    HSDebugWarningPrint(@"cc warning");
-    HSDebugErrorPrint(@"cc error");
-    HSDebugPrint(@"cc log");
+    CCDebugWarningPrint(@"cc warning");
+    CCDebugErrorPrint(@"cc error");
+    CCDebugPrint(@"cc log");
     
-    HSDebugTimerPrint(@"NStimer test");
+    CCDebugTimerPrint(@"NStimer test");
 }
 ```
 
 ## Screenshot
 
 ### OSX
-![HSDebug Mac Screenshot](https://github.com/ccworld1000/HSDebug/blob/master/Documentation/OSXRunning.png?raw=true)
+![CCDebug Mac Screenshot](https://github.com/ccworld1000/CCDebug/blob/master/Documentation/OSXRunning.png?raw=true)
 
 ### iOS
-![HSDebug iOS Screenshot](https://github.com/ccworld1000/HSDebug/blob/master/Documentation/iOSRunning.png?raw=true)
+![CCDebug iOS Screenshot](https://github.com/ccworld1000/CCDebug/blob/master/Documentation/iOSRunning.png?raw=true)
 
 ### OSX Xcode_8.3.2
-![HSDebug Mac Xcode_8.3.2 Screenshot](https://github.com/ccworld1000/HSDebug/blob/master/Documentation/OSXRunning_Xcode_8.3.2.png?raw=true)
+![CCDebug Mac Xcode_8.3.2 Screenshot](https://github.com/ccworld1000/CCDebug/blob/master/Documentation/OSXRunning_Xcode_8.3.2.png?raw=true)
 
 ### iOS Xcode_8.3.2
-![HSDebug iOS Xcode_8.3.2 Screenshot](https://github.com/ccworld1000/HSDebug/blob/master/Documentation/iOSRunning_Xcode_8.3.2.png?raw=true)
+![CCDebug iOS Xcode_8.3.2 Screenshot](https://github.com/ccworld1000/CCDebug/blob/master/Documentation/iOSRunning_Xcode_8.3.2.png?raw=true)
 
 
-## HSDebug
-HSDebug simple support machosx and iOS, can simple replace NSLog.
+## CCDebug
+CCDebug simple support machosx and iOS, can simple replace NSLog.
 
 
 # MIT License
