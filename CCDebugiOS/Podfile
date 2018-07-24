@@ -2,7 +2,6 @@
 # platform :ios, '9.0'
 
 target 'CCDebugiOS' do
-    pod 'CCStat'
     pod 'CCDebug'
 end
 

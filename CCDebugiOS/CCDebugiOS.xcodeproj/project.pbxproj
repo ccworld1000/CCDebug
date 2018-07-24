@@ -194,7 +194,6 @@
 				005D6D141E8224B4003EEA23 /* Sources */,
 				005D6D151E8224B4003EEA23 /* Frameworks */,
 				005D6D161E8224B4003EEA23 /* Resources */,
-				4D7C6D015DFBE528FB9CD750 /* [CP] Embed Pods Frameworks */,
 				799B486FFFE02FC8800D82B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -214,7 +213,6 @@
 				005D6D321E822533003EEA23 /* Sources */,
 				005D6D331E822533003EEA23 /* Frameworks */,
 				005D6D341E822533003EEA23 /* Resources */,
-				A9D130CBCDF0C1CD9D4BED39 /* [CP] Embed Pods Frameworks */,
 				E3DDDB512F955BA749B0C62E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -287,21 +285,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4D7C6D015DFBE528FB9CD750 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCDebugiOS/Pods-CCDebugiOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		799B486FFFE02FC8800D82B1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -309,30 +292,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CCDebugiOS/Pods-CCDebugiOS-resources.sh",
-				"${PODS_ROOT}/../../CCDebug.LICENSE.txt",
+				"${PODS_ROOT}/CCDebug/CCDebug.LICENSE.txt",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CCDebug.LICENSE.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCDebugiOS/Pods-CCDebugiOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A9D130CBCDF0C1CD9D4BED39 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCDebugOSX/Pods-CCDebugOSX-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DCD0D2950ACB1F10D77C2B83 /* [CP] Check Pods Manifest.lock */ = {
@@ -360,11 +328,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CCDebugOSX/Pods-CCDebugOSX-resources.sh",
-				"${PODS_ROOT}/../../CCDebug.LICENSE.txt",
+				"${PODS_ROOT}/CCDebug/CCDebug.LICENSE.txt",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CCDebug.LICENSE.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
