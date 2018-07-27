@@ -9,14 +9,7 @@
 
 #import <Foundation/Foundation.h>
 
-//net 1
-FOUNDATION_EXPORT NSString const *CCDebugNetHintGetV1;
-FOUNDATION_EXPORT NSString const *CCDebugNetHintPostV1;
-FOUNDATION_EXPORT NSString const *CCDebugNetHintResultsV1;
-
-//net 2
-FOUNDATION_EXPORT NSString const *CCDebugNetHintV2;
-FOUNDATION_EXPORT NSString const *CCDebugNetHintUploadtV2;
+FOUNDATION_EXPORT NSString const *CCDebugNetHint;
 
 /**
  *  CCDebugLog [C style] | Simplified use

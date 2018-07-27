@@ -24,26 +24,19 @@
 
 #define CCDebugHint            @"CCDebug Log"
 #define CCDebugError           @"CCDebug Error"
-#define CCDebugNormal          @"CCDebug normal"
-#define CCDebugWarning         @"CCDebug warning"
+#define CCDebugNormal          @"CCDebug Normal"
+#define CCDebugWarning         @"CCDebug Warning"
 #define CCDebugTimer           @"CCDebug Timer"
 
 #define CCDebugWebURL          @"CCDebug Web URL"
 
 #define CCDebugProtocolURL     @"CCDebug Protocol URL"
 
-// net 1
-NSString const * CCDebugNetHintGetV1        =  @"networking v1 get log";
-NSString const * CCDebugNetHintPostV1       =  @"networking v1 post log";
-NSString const * CCDebugNetHintResultsV1    =  @"networking v1 results log";
-
-// net 2
-NSString const * CCDebugNetHintV2           =  @"networking v2 log";
-NSString const * CCDebugNetHintUploadtV2    =  @"networking v2 upload log";
+NSString const * CCDebugNetHint =  @"networking log";
 
 #endif /* CCDebug_h */
 
-#define CCDebugColorsEscape @"\033[fg"
+NSString *const CCDebugColorsEscape = @"\033[fg";
 
 void CCDebugLog(NSString * prefix, NSString * message) {
     [CCDebug debugLog:prefix message:message];
