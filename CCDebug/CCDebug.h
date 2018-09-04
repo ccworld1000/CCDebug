@@ -38,7 +38,6 @@ FOUNDATION_EXPORT void CCDebugErrorPrint (NSString *message);
  *
  *  @param message message description
  *
- *  @return return value description
  */
 FOUNDATION_EXPORT void CCDebugWarningPrint (NSString *message);
 
