@@ -9,7 +9,7 @@ CCDebug : A flexible, lightweight, scalable, customizable log debugging [supot i
 
 [https://github.com/robbiehanson/XcodeColors](https://github.com/robbiehanson/XcodeColors)
 
-#### Support Xcode 4, 5, 6, 7, 8 & 9
+#### Support Xcode 4, 5, 6, 7, 8 , 9 & 10
 
 
 ## bug or suggest
