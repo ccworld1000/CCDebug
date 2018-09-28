@@ -1,5 +1,5 @@
 # CCDebug for iOS && OSX
-CCDebug : A flexible, lightweight, scalable, customizable log debugging [supot iOS && OSX]
+CCDebug : A flexible, lightweight, scalable, customizable log debugging [support iOS && OSX]
 
 =======================
 
@@ -7,23 +7,20 @@ CCDebug : A flexible, lightweight, scalable, customizable log debugging [supot i
 
 ## First : install XcodeColors
 
+If you want to support the color display, install the plug-in first, otherwise ignore it.
+
 [https://github.com/robbiehanson/XcodeColors](https://github.com/robbiehanson/XcodeColors)
 
 #### Support Xcode 4, 5, 6, 7, 8 , 9 & 10
 
 
-## bug or suggest
 
-G Email ： <a href="mailto:ccworld1000@gmail.com">ccworld1000@gmail.com</a>
-
-**[Suggestion to send at the same time]**
-
-## Podfile
+## Pod install
 
 ```ruby
 pod 'CCDebug'
 ```
-## Demo
+## Code Demo
 ```Objective-C
 + (void) logTest {
     [CCDebug debugLogSwitch: YES];
@@ -35,19 +32,25 @@ pod 'CCDebug'
      *  screenshot https://github.com/ccworld1000/CCDebug
      *  @param showColor showColor description
      */
-    [CCDebug colorRGBEnable: YES];
-    
+    [CCDebug colorRGBEnable: YES];  // YES if support XcodeColors
     [CCDebug warningCustomColors:60 green:120 blue:60];
+    
+    
+    [CCDebug colorRGBEnable: NO];   // NO if Not support XcodeColors
     
     CCDebugWarningPrint(@"cc warning");
     CCDebugErrorPrint(@"cc error");
     CCDebugPrint(@"cc log");
     
     CCDebugTimerPrint(@"NStimer test");
+    
+    say(@"say ...");
+    error(@"error ...");
+    warning(@"warning ...");
 }
 ```
 
-## Screenshot
+## Screenshot 
 
 ### OSX
 ![CCDebug Mac Screenshot](https://github.com/ccworld1000/CCDebug/blob/master/Documentation/OSXRunning.png?raw=true)

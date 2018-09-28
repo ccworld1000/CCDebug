@@ -21,15 +21,21 @@
      *  screenshot https://github.com/ccworld1000/CCDebug
      *  @param showColor showColor description
      */
-    [CCDebug colorRGBEnable: YES];
-    
+    [CCDebug colorRGBEnable: YES];  // YES if support XcodeColors
     [CCDebug warningCustomColors:60 green:120 blue:60];
+    
+    
+    [CCDebug colorRGBEnable: NO];   // NO if Not support XcodeColors
     
     CCDebugWarningPrint(@"cc warning");
     CCDebugErrorPrint(@"cc error");
     CCDebugPrint(@"cc log");
     
     CCDebugTimerPrint(@"NStimer test");
+    
+    say(@"say ...");
+    error(@"error ...");
+    warning(@"warning ...");
 }
 
 @end

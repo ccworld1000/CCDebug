@@ -27,6 +27,14 @@ FOUNDATION_EXPORT void CCDebugLog (NSString *prefix, NSString *message);
 FOUNDATION_EXPORT void CCDebugPrint (NSString *message);
 
 /**
+ *  CCSay [C style] | Simplified use [same as CCDebugLog]
+ *
+ *  @param prefix  prefix description
+ *  @param message message description
+ */
+FOUNDATION_EXPORT void CCSay (NSString *prefix, NSString *message);
+
+/**
  *  CCDebugErrorPrint| [C style] | Error prompt
  *
  *  @param message message description
@@ -62,6 +70,17 @@ FOUNDATION_EXPORT void CCDebugWebURLPrint (NSString *message);
  */
 FOUNDATION_EXPORT void CCDebugProtocolURLPrint (NSString *message);
 
+
+FOUNDATION_EXPORT void say (NSString *message);     //[same as CCDebugPrint]
+FOUNDATION_EXPORT void error (NSString *message);   //[same as CCDebugErrorPrint]
+FOUNDATION_EXPORT void warning (NSString *message); //[same as CCDebugWarningPrint]
+
+
+
+/**
+ * CCDebug : A flexible, lightweight, scalable, customizable log debugging. 【Support macOSX and iOS】.
+ * 
+ */
 @interface CCDebug : NSObject
 
 /*=============================================================================================================*/

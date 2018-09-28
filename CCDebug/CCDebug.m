@@ -66,6 +66,21 @@ void CCDebugProtocolURLPrint(NSString * message) {
     [CCDebug debugLog:CCDebugProtocolURL message:message];
 }
 
+void CCSay (NSString *prefix, NSString *message) {
+    CCDebugLog(prefix, message);
+}
+
+void say (NSString *message) {
+    CCDebugPrint(message);
+}
+
+void error (NSString *message) {
+    CCDebugErrorPrint(message);
+}
+
+void warning (NSString *message) {
+    CCDebugWarningPrint(message);
+}
 
 static BOOL CCDebugALLLogSwitch = NO;
 static BOOL CCDebugColorRGBEnable = NO;         // Color control switch off = 0 |  on = 1 | or NO | YES
