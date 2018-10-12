@@ -49,15 +49,9 @@
 		1F631E1F63D6984756D22E1F /* Pods-CCDebugiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCDebugiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCDebugiOS/Pods-CCDebugiOS.release.xcconfig"; sourceTree = "<group>"; };
 		53CB92F418F1D46F5FF4CA35 /* Pods-CCDebugiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCDebugiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCDebugiOS/Pods-CCDebugiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		63511A727FE14B5C1C276EB1 /* libPods-CCDebugOSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CCDebugOSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		84D140CCC261AC91DB133ECB /* Pods-HSDebugOSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSDebugOSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HSDebugOSX/Pods-HSDebugOSX.debug.xcconfig"; sourceTree = "<group>"; };
-		8C3D10B84C693B18F4051751 /* Pods-HSDebugOSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSDebugOSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-HSDebugOSX/Pods-HSDebugOSX.release.xcconfig"; sourceTree = "<group>"; };
-		9A7883109F5A21AFA93B1CA1 /* libPods-HSDebugOSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HSDebugOSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EB8CEDC10205FF847EAFD9 /* Pods-CCDebugOSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCDebugOSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCDebugOSX/Pods-CCDebugOSX.debug.xcconfig"; sourceTree = "<group>"; };
-		A434F2BC4096F3830DBF7BB6 /* Pods-HSDebugiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSDebugiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HSDebugiOS/Pods-HSDebugiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C35499495AF6953551DAA72E /* libPods-CCDebugiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CCDebugiOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C47074CB7E7763849C2990BB /* libPods-HSDebugiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HSDebugiOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D88315676D1332AC7A437BF9 /* Pods-CCDebugOSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCDebugOSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCDebugOSX/Pods-CCDebugOSX.release.xcconfig"; sourceTree = "<group>"; };
-		F3ADF870F6ACF3072A9F6521 /* Pods-HSDebugiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSDebugiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-HSDebugiOS/Pods-HSDebugiOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,10 +154,6 @@
 		DD6739877F5A87543E25EA0E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A434F2BC4096F3830DBF7BB6 /* Pods-HSDebugiOS.debug.xcconfig */,
-				F3ADF870F6ACF3072A9F6521 /* Pods-HSDebugiOS.release.xcconfig */,
-				84D140CCC261AC91DB133ECB /* Pods-HSDebugOSX.debug.xcconfig */,
-				8C3D10B84C693B18F4051751 /* Pods-HSDebugOSX.release.xcconfig */,
 				A1EB8CEDC10205FF847EAFD9 /* Pods-CCDebugOSX.debug.xcconfig */,
 				D88315676D1332AC7A437BF9 /* Pods-CCDebugOSX.release.xcconfig */,
 				53CB92F418F1D46F5FF4CA35 /* Pods-CCDebugiOS.debug.xcconfig */,
@@ -175,8 +165,6 @@
 		E346FF5BCAD1A50E128F22AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C47074CB7E7763849C2990BB /* libPods-HSDebugiOS.a */,
-				9A7883109F5A21AFA93B1CA1 /* libPods-HSDebugOSX.a */,
 				63511A727FE14B5C1C276EB1 /* libPods-CCDebugOSX.a */,
 				C35499495AF6953551DAA72E /* libPods-CCDebugiOS.a */,
 			);
@@ -291,7 +279,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CCDebugiOS/Pods-CCDebugiOS-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-CCDebugiOS/Pods-CCDebugiOS-resources.sh",
 				"${PODS_ROOT}/CCDebug/CCDebug.LICENSE.txt",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -300,7 +288,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCDebugiOS/Pods-CCDebugiOS-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CCDebugiOS/Pods-CCDebugiOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DCD0D2950ACB1F10D77C2B83 /* [CP] Check Pods Manifest.lock */ = {
@@ -327,7 +315,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CCDebugOSX/Pods-CCDebugOSX-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-CCDebugOSX/Pods-CCDebugOSX-resources.sh",
 				"${PODS_ROOT}/CCDebug/CCDebug.LICENSE.txt",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -336,7 +324,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCDebugOSX/Pods-CCDebugOSX-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CCDebugOSX/Pods-CCDebugOSX-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F23F20C01C07B9E64894256B /* [CP] Check Pods Manifest.lock */ = {
