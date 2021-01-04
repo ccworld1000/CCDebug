@@ -1,19 +1,13 @@
-# CCDebug for iOS && OSX
+# [CCDebug](https://github.com/ccworld1000/CCDebug) for iOS && OSX
 CCDebug : A flexible, lightweight, scalable, customizable log debugging [support iOS && OSX]
-
-=======================
-
-[https://github.com/ccworld1000/CCDebug.git](https://github.com/ccworld1000/CCDebug.git)
 
 ## First : install XcodeColors
 
-If you want to support the color display, install the plug-in first, otherwise ignore it.
+If you want to support the color display(low version Xcode,Plugins are no longer supported in higher versions of Xcode), install the plug-in first, otherwise ignore it.
 
 [https://github.com/robbiehanson/XcodeColors](https://github.com/robbiehanson/XcodeColors)
 
-#### Support Xcode 4, 5, 6, 7, 8 , 9 & 10
-
-
+#### Support Xcode 4, 5, 6, 7, 8 , 9, 10, 11, 12
 
 ## Pod install
 
